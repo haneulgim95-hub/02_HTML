@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div style="background-color: #aaa; width: 300px; height: 300px; border: 5px dashed black;border-radius: 10px"></div>
+
+<div style="background-image: url('images/images.png');width: 600px; height: 600px;background-repeat: no-repeat">글자를 적습니다</div>
+<div style="background-image: url('images/images.png');width: 600px; height: 300px;background-size: cover; background-repeat: no-repeat">글자를 적습니다</div><br>
+<!--background-size: cover
+
+요소를 꽉 채우는 것이 목표
+
+이미지가 잘릴 수 있음
+
+대신 빈 공간이 절대 안 생김-->
+<div style="background-image: url('images/images.png');width: 600px; height: 300px;background-size: contain; background-repeat: no-repeat">글자를 적습니다</div>
+<!--background-size: contain
+
+이미지를 전부 보여주는 것이 목표
+
+이미지는 절대 안 잘림
+
+대신 빈 공간이 생길 수 있음-->
+
+<div style="background-image: url('images/images.png');width: 600px; height: 300px;background-size: contain; background-repeat: no-repeat; background-position: center">글자를 적습니다</div>
+<div style="background-image: url('images/images.png');width: 600px; height: 300px;background-size: contain; background-repeat: no-repeat; background-position: 100px 100px">글자를 적습니다</div>
+
+
+</body>
+</html>

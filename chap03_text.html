@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--html의 기본값은 16px임. rem은 최상위 요소인 html이 기준임-->
+<div style="font-size:2rem; background-color:#ffdd00; color: white">여기는 div 입니다.</div>
+
+<!--기본값은 400이다/ bold는 700이다-->
+<div style="font-weight: bold">이건 font-weight를 bold로 했습니다</div>
+<div style="font-weight: lighter">이건 font-weight를 lighter로 했습니다</div>
+<div style="font-weight: normal">이건 font-weight를 normal로 했습니다</div>
+<div style="font-weight: bolder">이건 font-weight를 bolder로 했습니다</div>
+<div style="font-weight: 100">이건 font-weight를 100으로 했습니다</div>
+<div style="font-weight: 900">이건 font-weight를 900으로 했습니다</div>
+
+<div style="font-style:italic">이건 이텔릭체를 표현합니다</div>
+<div style="text-decoration: underline">이건 밑줄을 표기하는 스타일입니다.</div>
+<div style="text-decoration: line-through">이건 취소선을 표기하는 스타일입니다</div>
+<div style="text-decoration: none">이건 아무런 텍스트 데코레이션도 표기하지 않습니다</div>
+
+<!--a태그에서 밑줄을 없애주는 역할-->
+<a href="https://google.com" target="_blank" style="text-decoration: none; color: black">구글 연결</a>
+
+<div style="background-color: #f0f0f0; width: 200px; height: 300px">이것은 div입니다.</div>
+<button style="width: 120px; height: 50px; background-color: orange; border: none; border-radius: 5px; color: white">버튼입니다.</button>
+
+<!--공백을 표시하고 싶을때!!!!! white-space를 pre로 줬을때 텍스트가 영역을 벗어날수도 있다-->
+<div style="white-space: pre; background-color: aqua; width: 200px">이렇게 하면      공백이         나오나요</div><br>
+<!--white-space:pre-wrap : 공백유지. 크기에 맞게 자동 줄바꿈-->
+<div style="white-space: pre-wrap; background-color: aqua; width: 200px;">이렇게 하면      공백이         나오나요</div>
+
+
+<div style="text-transform:uppercase">이것은 영문자를 대문자로 바꿔서 보여주는 스타일입니다. UpperCase</div>
+<div style="text-transform:lowercase">이것은 영문자를 소문자로 바꿔서 보여주는 스타일입니다. LowerCase</div>
+<div style="text-transform:capitalize">이것은 글자의 첫글자만 대문자로 바꿔줍니다. capitalize</div>
+
+<!--글자의 사이 공간(자간)-->
+<div style="letter-spacing: 10px">이것은 letter spacing입니다.</div>
+<!--단어들 사이 공간-->
+<div style="word-spacing: 10px">이것은 letter spacing입니다.</div>
+<div style="line-height: 2">이것은 <br> 줄간격 <br> 입니다</div>
+</body>
+</html>

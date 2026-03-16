@@ -1,0 +1,122 @@
+/*
+    후손 선택자 : div 안의 p라고 하는 자식은 적용받음
+    조상중에 div가 있으면 계단식을 타고 내려가서 모든 p라는 후손이 다 적용받음
+    */
+div p {
+    color: red;
+}
+
+/*
+    자식 선택자 : div안의 직계 자식인 p에만 적용됨.
+*/
+div > p {
+    color: aqua;
+}
+
+/*
+    클래스 선택자 : class 속성에 부여된 이름에 적용
+*/
+.fontSize {
+    font-size: 20px;
+}
+
+/*
+    ID 선택자 : id 속성에 부여된 이름에 적용 (id는 유일해야 함)
+*/
+
+#a {
+    color: blue;
+}
+
+button{
+    background-color: red;
+    color: white;
+}
+
+/*
+    반응선택자
+        hover : 마우스가 위로 올라갔을 때 적용되는 CSS
+        active : 버튼이 눌렸을 때 적용되는 CSS
+        focus : 입력 요소가 포커스(선택)를 받았을 때 적용되는 css
+*/
+button:hover {
+    background-color: blue;
+    cursor: pointer;
+}
+button:active {
+    background-color: green;
+}
+
+input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input:focus {
+    outline: none;
+    /*기본적으로 아웃라인이 적용되어 있다. */
+    border: 1px solid blue;
+}
+
+input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    appearance: none;    /*웹 브라우저의 기본 스타일 제거 */
+}
+
+input[type="checkbox"]:checked {
+    background-color: #8dd94e;
+}
+
+input:disabled {
+    color: red;
+    cursor: not-allowed;
+}
+
+table {
+    border-collapse: collapse; /*테이블 셀 간격 제거 -> 외곽선이 합쳐지는 효과*/
+    width: 60%;     /*부모인 body의 60%를 차지. table은 블럭 속성이라서 가로지정 가능*/
+    margin: 20px auto;
+}
+
+/*표안에서는 flex를 사용해서 가로, 세로 정렬을 할 수 없다.
+가로 정렬은 text-align : center
+세로 정렬은 vertical-align : ~  기본은 center로 정렬 되어있다.*/
+th, td {
+    height: 100px;
+    border: 1px solid #333;
+    padding: 8px 12px;
+    text-align: center;
+    vertical-align: top;
+}
+
+/*구조 선택자*
+    first-child : 한개이상의 th가 있다면 그 중 첫 번째에 부여
+    last-child : 한 개 이상의 th가 있다면 그 중 마지막에 부여
+    nth-child() : 한 개 이상의 tr가 있다면 그 중 특정 번째에 부여
+                => even : 짝수
+                => odd : 홀수
+                => n을 이용해서 쓰는게 정석
+                2n - 1 : 홀수 번째
+                2n : 짝수
+                3n : 3의 배수*/
+
+th:first-child {
+    background-color: #ffcccc;
+}
+
+th:last-child {
+    background-color: #8db5b8;
+}
+
+tbody > tr:nth-child(2n) {
+    background-color: green;
+}
+
+tbody > tr:nth-child(odd) {
+    background-color: orange;
+}
+
