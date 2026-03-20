@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100dvh;
+    /*   높이의 최소 크기를 100dvh. 그것 보다 커지는건 허용하겠다.*/
+    color: #1a1a1a;
+    background-color: #f9f9f9;
+}
+
+ul {
+    list-style: none;
+    /*    padding 0은 *에 줬기 때문에 따로 줄 필요 없다.*/
+}
+
+nav ul {
+   display: flex;
+    background-color: #e5e5e5;
+    gap: 1px;
+    /*border를 주지않고 균일하게 선을 만들어준다.*/
+    border-bottom: 1px solid #e5e5e5;
+}
+
+nav ul li {
+    flex: 1;
+    background-color: white;
+    padding: 24px 10px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+nav ul li:hover {
+    background-color: #f0f0f0;
+}
+
+nav ul li:nth-child(6) {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+main {
+    flex: 1;
+    /*    header를 제외한 나머지를 main이 채워준다.
+    body가 최소높이가 100dvh이고 header를 제외한 나머지는 main이 가져간다.*/
+    display: flex;
+    flex-direction: column;
+}
+
+.breadcrumbs {
+    border-bottom: 1px solid #e5e5e5;
+    padding: 10px 50px;
+    color: #aaa;
+    background-color: white;
+}
+
+
+/*항상 마지막 요소를 강조해준다.! 이정표와 같은것.*/
+.crumb:last-child {
+    font-weight: bold;
+    color: #1a1a1a;
+}
+
+section {
+    display: flex;
+    background-color: #e5e5e5;
+    gap: 1px;
+    flex: 1;
+/*    자식요소가 1:1을 차지하는데 크기가 늘어나면 배율이 무너진다*/
+}
+
+.image {
+    flex: 1;
+    background-image: url("https://fastly.picsum.photos/id/123/400/300.jpg?hmac=DQBlZ851fCvvZdDdgB0SrZntwWA3edivMzY6eMgf5GU");
+    background-size: cover;    /*cover : 영역 전체를 꽉차게, 이미지가 잘릴수 있음. 여백은 없음*/
+    background-position: center;  /*이미지 중앙을 기준으로 */
+}
+
+.info {
+    flex: 1.3;     /*왼쪽은 1 : 오른쪽은 1.3*/
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+}
+
+.info-header {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 60px 80px;
+    flex: 1;
+}
+
+.category {
+    font-size: 13px;
+    font-weight: 600;
+    color: #888;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+}
+
+.title {
+    font-size: 48px;
+    font-weight: 700;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+}
+
+.add-to-cart {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.quantity {
+    border: 1px solid #e5e5e5;
+    padding: 10px 24px;
+    border-radius: 50px;
+    font-size: 20px;
+    display: flex;
+    gap: 15px;
+    user-select: none;       /* 드래그 불가*/
+}
+
+.price {
+    font-size: 32px;
+}
+
+.info-footer {
+    flex: 1;
+    /*자식의 크기가 반을 넘어가면 50%가 유지가 되지 않는다. */
+    display: flex;
+    gap: 1px;
+}
+
+.info-footer > div {
+    width: 50%;
+    /* 절대적으로 50%를 지킨다!! */
+    background-color: white;
+    padding: 60px;
+}
+
+.faq {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.faq > div {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #e5e5e5;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 20px 0;
+}
+
+
+
+
