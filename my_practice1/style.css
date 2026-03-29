@@ -1,0 +1,127 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: #454545;
+    background-color: #f4f3f3;
+    height: 100dvh;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    height: 100%;
+}
+
+header {
+    font-size: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    padding: 30px;
+    text-align: center;
+    border-bottom: 1px solid #dcdcdc;
+}
+
+
+.flex-row {
+    display: flex;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.tap {
+    width: 60px;
+    background-color: #c1c1c1;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color: #8a8a8a;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.tap:hover {
+    background-color: #b5b3b3;
+    color: #373737;
+
+}
+
+.tap span {
+    transform: rotate(-90deg);
+}
+
+main {
+    flex: 1;
+    padding: 40px;
+}
+
+nav ul {
+    justify-content: space-around;
+    list-style: none;
+    font-size: 20px;
+    font-weight: 600;
+    color: #a3a2a2;
+    border-bottom: 2px solid #dcdcdc;
+    margin-bottom: 40px;
+}
+
+nav ul li {
+    padding: 15px 20px;
+    border-bottom: 2px solid transparent;
+    margin-bottom: -2px;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+nav ul li:hover {
+    color: #7777fb;
+    border-bottom: 2px solid #7777fb;
+}
+
+.main-titleBar {
+    justify-content: space-between;
+    font-weight: 600;
+    font-size: 14px;
+    margin-bottom: 40px;
+}
+
+.breadcrumbs {
+    gap: 15px;
+    color: #3b82f6;
+}
+
+.projects {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.project-imageWrapper {
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.project-imageWrapper img {
+    transition: transform 0.3s ease;
+}
+
+.project-imageWrapper img:hover {
+    transform: scale(1.05);
+}
+
+.project-title {
+    text-align: center;
+    font-weight: 600;
+    font-size: 18px;
+    color: #334155;
+}
