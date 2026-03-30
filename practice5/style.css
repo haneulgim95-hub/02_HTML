@@ -184,7 +184,7 @@ body {
 }
 
 .img-container {
-    /*z-index: 2;*/
+    z-index: 2;
     height: 100%;
     /* 높이는 직계자식인 visual-section에만 자동 적용된다. */
     /* 후손은 자동으로 높이가 stretch 되지 않을 뿐더러, 빈 div와 background-image는 자기 높이를 직접 지정해줘야 한다.    */
