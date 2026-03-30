@@ -211,44 +211,43 @@ body {
     border-color: #2563eb;
 }
 
-.custom-checkbox-wrapper {
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-    user-select: none;   /*드래그 방지*/
-    gap: 10px;
-}
+/*.custom-checkbox-wrapper {*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*    cursor: pointer;*/
+/*    user-select: none;   !*드래그 방지*!*/
+/*    gap: 10px;*/
+/*}*/
 
-.hidden-checkbox {
-    display: none;      /* 화면에 출력되지 않게끔 함. 대신 html 코드는 존재함*/
-}
+/*.hidden-checkbox {*/
+/*    display: none;      !* 화면에 출력되지 않게끔 함. 대신 html 코드는 존재함*!*/
+/*}*/
 
-.check-box {
-    width: 22px;
-    height: 22px;
-    border: 2px solid #d1d5db;
-    border-radius: 6px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: white;
-    transition: all 0.2s;
-    padding-bottom: 4px;
-}
+/*.check-box {*/
+/*    width: 22px;*/
+/*    height: 22px;*/
+/*    border: 2px solid #d1d5db;*/
+/*    border-radius: 6px;*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*    align-items: center;*/
+/*    background-color: white;*/
+/*    transition: all 0.2s;*/
+/*    padding-bottom: 4px;*/
+/*}*/
 
-.checkmark-icon {
-    width: 6px;
-    height: 10px;
-    border-bottom: 2px solid white;
-    border-right: 2px solid white;
-    transform: rotate(45deg);
-}
+/*.checkmark-icon {*/
+/*    width: 6px;*/
+/*    height: 10px;*/
+/*    border-bottom: 2px solid white;*/
+/*    border-right: 2px solid white;*/
+/*    transform: rotate(45deg);*/
+/*}*/
 
-/* +는 형제 관계에서 선택할 때 사용*/
-.hidden-checkbox:checked + .check-box {
-    background-color: #2563eb;
-    border-color: #2563eb;
-}
+/*.hidden-checkbox:checked + .check-box {*/
+/*    background-color: #2563eb;*/
+/*    border-color: #2563eb;*/
+/*}*/
 
 .form-actions {
     display: flex;
@@ -257,4 +256,40 @@ body {
     margin-top: 30px;
     padding-top: 30px;
     border-top: 1px solid #e5e7eb;
+}
+
+.checkbox-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.hidden-checkbox {
+    display: none;
+}
+
+.checkbox {
+    width: 18px;
+    height: 18px;
+    border: 1px solid #9b9b9b;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.checkbox-icon {
+    width: 6px;
+    height: 8px;
+    border-bottom: 2px solid white;
+    border-right: 2px solid white;
+    transform: rotate(45deg);
+    margin-bottom: 4px;
+}
+
+.hidden-checkbox:checked + .checkbox {
+    background-color: cornflowerblue;
+    border-color: cornflowerblue;
 }
