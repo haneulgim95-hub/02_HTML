@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+</head>
+<body>
+<div class="container">
+    <aside>
+        <div class="logo">
+            <i class="fa-solid fa-cube brand-icon"></i>
+            <h2>MyDash</h2>
+        </div>
+        <nav class="nav-menu">
+            <a href="#" class="nav-item active">
+                <i class="fa-regular fa-id-badge"></i>
+                <span>Profile info</span>
+            </a>
+            <a href="#" class="nav-item">
+                <i class="fa-solid fa-shield-halved"></i>
+                <span>Account Security</span>
+            </a>
+            <a href="#" class="nav-item">
+                <i class="fa-regular fa-bell"></i>
+                <span>Notifications</span>
+            </a>
+            <a href="#" class="nav-item">
+                <i class="fa-regular fa-credit-card"></i>
+                <span>Billing Details</span>
+            </a>
+        </nav>
+        <div class="nav-menu"></div>
+    </aside>
+    <main>
+        <header class="top-header">
+            <div class="header-text">
+                <h2>Profile Information</h2>
+                <p>Update your photo and personal details</p>
+            </div>
+            <div class="user-shortcut">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <div class="user-avatar-small">A</div>
+            </div>
+        </header>
+        <div class="content-wrapper">
+            <form class="profile-form">
+                <div class="avatar-section">
+                    <div class="user-avatar-big">A</div>
+                    <button class="btn btn-blue">
+                        <i class="fa-solid fa-cloud-arrow-up"></i>Upload
+                    </button>
+                    <button class="btn btn-white">
+                        <i class="fa-solid fa-trash-can"></i>Remove
+                    </button>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="first-name">First name</label>
+                        <input type="text" name="first-name" value="Alex" id="first-name">
+                    </div>
+                    <div class="form-group">
+                        <label for="last-name">Last name</label>
+                        <input type="text" name="last-name" value="Smith" id="last-name">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="email">email</label>
+                        <input type="email" name="email" value="abc@abc.com" id="email">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="phone-number">phoneNumber</label>
+                        <input type="tel" name="phone-number" value="+1 234 567 890" id="phone-number">
+                    </div>
+                </div>
+                <div class="btn-wrapper">
+                    <button class="btn btn-white">Cancel</button>
+                    <button class="btn btn-blue">Save Changes</button>
+                </div>
+            </form>
+        </div>
+    </main>
+</div>
+</body>
+</html>
