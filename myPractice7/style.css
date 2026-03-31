@@ -222,5 +222,13 @@ main {
     margin-top: 30px;
 }
 
+.form-checkbox {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 15px;
+    color: #585858;
+}
+
 
 
