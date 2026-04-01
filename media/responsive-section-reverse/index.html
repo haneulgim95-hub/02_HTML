@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 100dvh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 30px;
+        }
+
+        .section {
+            display: flex;
+            gap: 30px;
+            flex-direction: row;
+            width: 100%;
+            max-width: 600px;
+            min-height: 300px;
+        }
+
+        .image {
+            flex: 1;
+            border-radius: 15px;
+            overflow: hidden;
+        }
+
+        .text {
+            flex: 1;
+        }
+
+        .image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .text {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        @media (max-width: 768px) {
+            .section {
+                flex-direction: column-reverse;
+            }
+        }
+
+    </style>
+</head>
+<body>
+<div class="section">
+    <div class="image">
+        <img src="https://images.unsplash.com/photo-1774427666971-59249b21cbbc?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="pic">
+    </div>
+    <div class="text">
+        <h2>제목 작성</h2>
+        <p>설명 글 작성</p>
+    </div>
+</div>
+</body>
+</html>

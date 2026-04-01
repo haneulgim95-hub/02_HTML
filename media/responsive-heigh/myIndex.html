@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            height: 100vh;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .card {
+            height: 300px;
+            width: 300px;
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 1px 1px 13px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .card {
+                height: 200px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .card {
+                height: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="card">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda dicta doloribus est excepturi expedita fugit in laudantium maxime modi natus nulla odit,
+        perspiciatis placeat provident quasi qui rerum sit velit.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda dicta doloribus est excepturi
+        expedita fugit in laudantium maxime modi natus nulla odit, perspiciatis placeat provident quasi qui rerum sit velit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        consectetur adipisicing elit. Assumenda dicta doloribus est excepturi expedita fugit in laudantium maxime modi natus nulla odit, perspiciatis placeat provident quasi qui rerum sit velit.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda dicta doloribus est excepturi expedita fugit in laudantium maxime modi natus nulla odit, perspiciatis placeat provident quasi qui rerum sit velit.</p>
+</div>
+</body>
+</html>
